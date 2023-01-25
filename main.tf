@@ -27,7 +27,7 @@ resource "aws_instance" "blog" {
     Name = "Learning Terraform"
   }
 }
-
+ 
 module "blog_sg" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "4.13.0"
@@ -39,3 +39,5 @@ module "blog_sg" {
   egress_rules = ["all-all"]
   egress_cidr_blocks = ["0.0.0.0/0"]
 }
+
+#test kepe
